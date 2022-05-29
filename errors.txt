@@ -1,0 +1,9 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/screens.rpy", line 369: is not terminated with a newline. (Check strings and parenthesis.)
+            hotspot(886, 341, 297, 47) action [Play("sound", "audio/butclick.mp3",ShowMenu("load")] hovered [ Play ("sound", "audio/click.wav")]
+
+Ren'Py Version: Ren'Py 7.4.2.1292
+Mon May 23 12:36:29 2022

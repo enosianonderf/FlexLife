@@ -1,0 +1,76 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/scenario/script.rpy", line 10, in script
+    show screen info_panel with dissolve
+  File "renpy/common/000statements.rpy", line 542, in execute_show_screen
+    renpy.with_statement(eval(transition_expr))
+  File "game/scenario/script.rpy", line 2, in execute
+    screen info_panel:
+  File "game/scenario/script.rpy", line 2, in execute
+    screen info_panel:
+  File "game/scenario/script.rpy", line 3, in execute
+    frame:
+NameError: Name '3kuznik' is not defined.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/scenario/script.rpy", line 10, in script
+    show screen info_panel with dissolve
+  File "renpy/ast.py", line 1969, in execute
+    self.call("execute")
+  File "renpy/ast.py", line 1957, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "renpy/statements.py", line 278, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 542, in execute_show_screen
+    renpy.with_statement(eval(transition_expr))
+  File "renpy/exports.py", line 1637, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "renpy/display/core.py", line 2546, in do_with
+    clear=clear)
+  File "renpy/display/core.py", line 3007, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3418, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/core.py", line 566, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 566, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 566, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 566, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/screen.py", line 432, in visit_all
+    callback(self)
+  File "renpy/display/core.py", line 3418, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/screen.py", line 443, in per_interact
+    self.update()
+  File "renpy/display/screen.py", line 631, in update
+    self.screen.function(**self.scope)
+  File "game/scenario/script.rpy", line 2, in execute
+    screen info_panel:
+  File "game/scenario/script.rpy", line 2, in execute
+    screen info_panel:
+  File "game/scenario/script.rpy", line 3, in execute
+    frame:
+  File "renpy/text/text.py", line 1620, in _scope
+    return self.set_text(self.text_parameter, scope, self.substitute, update)
+  File "renpy/text/text.py", line 1644, in set_text
+    i, did_sub = renpy.substitutions.substitute(i, scope, substitute)
+  File "renpy/substitutions.py", line 270, in substitute
+    s = formatter.vformat(s, (), kwargs)
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 563, in vformat
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 585, in _vformat
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 646, in get_field
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 605, in get_value
+  File "renpy/substitutions.py", line 228, in __getitem__
+    raise NameError("Name '{}' is not defined.".format(key))
+NameError: Name '3kuznik' is not defined.
+
+Windows-10-10.0.19041
+Ren'Py 7.4.2.1292
+Flex Life 1.0
+Mon May 23 08:37:52 2022
