@@ -1,76 +1,64 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/scenario/script.rpy", line 10, in script
-    show screen info_panel with dissolve
-  File "renpy/common/000statements.rpy", line 542, in execute_show_screen
-    renpy.with_statement(eval(transition_expr))
-  File "game/scenario/script.rpy", line 2, in execute
-    screen info_panel:
-  File "game/scenario/script.rpy", line 2, in execute
-    screen info_panel:
-  File "game/scenario/script.rpy", line 3, in execute
-    frame:
-NameError: Name '3kuznik' is not defined.
+While loading <'Image' u'gui/game_menu.png'>:
+IOError: Couldn't find file 'gui/game_menu.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/scenario/script.rpy", line 10, in script
-    show screen info_panel with dissolve
-  File "renpy/ast.py", line 1969, in execute
-    self.call("execute")
-  File "renpy/ast.py", line 1957, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "renpy/statements.py", line 278, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 542, in execute_show_screen
-    renpy.with_statement(eval(transition_expr))
-  File "renpy/exports.py", line 1637, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "renpy/display/core.py", line 2546, in do_with
-    clear=clear)
+  File "renpy/common/_layout/screen_load_save.rpym", line 35, in script
+    $ ui.interact()
+  File "renpy/ast.py", line 922, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2218, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_load_save.rpym", line 35, in <module>
+    $ ui.interact()
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "renpy/display/core.py", line 3007, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "renpy/display/core.py", line 3418, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "renpy/display/core.py", line 566, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/core.py", line 566, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/core.py", line 566, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/core.py", line 566, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/screen.py", line 432, in visit_all
-    callback(self)
-  File "renpy/display/core.py", line 3418, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "renpy/display/screen.py", line 443, in per_interact
-    self.update()
-  File "renpy/display/screen.py", line 631, in update
-    self.screen.function(**self.scope)
-  File "game/scenario/script.rpy", line 2, in execute
-    screen info_panel:
-  File "game/scenario/script.rpy", line 2, in execute
-    screen info_panel:
-  File "game/scenario/script.rpy", line 3, in execute
-    frame:
-  File "renpy/text/text.py", line 1620, in _scope
-    return self.set_text(self.text_parameter, scope, self.substitute, update)
-  File "renpy/text/text.py", line 1644, in set_text
-    i, did_sub = renpy.substitutions.substitute(i, scope, substitute)
-  File "renpy/substitutions.py", line 270, in substitute
-    s = formatter.vformat(s, (), kwargs)
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 563, in vformat
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 585, in _vformat
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 646, in get_field
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 605, in get_value
-  File "renpy/substitutions.py", line 228, in __getitem__
-    raise NameError("Name '{}' is not defined.".format(key))
-NameError: Name '3kuznik' is not defined.
+  File "renpy/display/core.py", line 3517, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "renpy/display/core.py", line 2377, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 751, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/transition.py", line 368, in render
+    top = render(self.new_widget, width, height, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 751, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 751, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/screen.py", line 681, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 751, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/im.py", line 607, in render
+    return cache.get(self, render=True)
+  File "renpy/display/im.py", line 271, in get
+    surf = image.load()
+  File "renpy/display/im.py", line 651, in load
+    filelike = renpy.loader.load(self.filename)
+  File "renpy/loader.py", line 798, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'gui/game_menu.png'.
 
 Windows-10-10.0.19041
 Ren'Py 7.4.2.1292
 Flex Life 1.0
-Mon May 23 08:37:52 2022
+Sun May 29 05:10:28 2022
