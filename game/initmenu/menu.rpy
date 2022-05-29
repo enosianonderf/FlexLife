@@ -7,3 +7,7 @@ init:
 
     # музыка
     $ losbiblicos = "game/audio/losbiblicos.mp3"
+
+    #звуки
+    $ td = "game/audio/sfx/td.mp3"
+    $ pta = "game/audio/sfx/pta.mp3"

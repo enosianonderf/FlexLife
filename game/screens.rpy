@@ -364,11 +364,11 @@ screen main_menu():
         idle "gui/idle1.png"
         hover "gui/hot1.png"
 
-        hotspot(886, 150, 364, 47) action [Play("sound", "audio/butclick.mp3"), Start() ] hovered [ Play ("sound", "audio/click.wav")]
-        hotspot(886, 248, 323, 47) action [Play("sound", "audio/butclick.mp3"), ShowMenu("preferences")] hovered [ Play ("sound", "audio/click.wav")]
-        hotspot(886, 341, 297, 47) action [Play("sound", "audio/butclick.mp3"), ShowMenu("load")] hovered [ Play ("sound", "audio/click.wav")]
-        hotspot(886, 434, 236, 47) action [Play("sound", "audio/butclick.mp3"), ShowMenu("about")] hovered [ Play ("sound", "audio/click.wav")]
-        hotspot(886, 526, 208, 47) action [Play("sound", "audio/butclick.mp3"),Quit (confirm=True)] hovered [ Play ("sound", "audio/click.wav")]
+        hotspot(886, 150, 364, 47) action [Play("sound", "audio/sfx/butclick.mp3"), Start() ] hovered [ Play ("sound", "audio/sfx/click.wav")]
+        hotspot(886, 248, 323, 47) action [Play("sound", "audio/sfx/butclick.mp3"), ShowMenu("preferences")] hovered [ Play ("sound", "audio/sfx/click.wav")]
+        hotspot(886, 341, 297, 47) action [Play("sound", "audio/sfx/butclick.mp3"), ShowMenu("load")] hovered [ Play ("sound", "audio/sfx/click.wav")]
+        hotspot(886, 434, 236, 47) action [Play("sound", "audio/sfx/butclick.mp3"), ShowMenu("about")] hovered [ Play ("sound", "audio/sfx/click.wav")]
+        hotspot(886, 526, 208, 47) action [Play("sound", "audio/sfx/butclick.mp3"),Quit (confirm=True)] hovered [ Play ("sound", "audio/sfx/click.wav")]
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox
