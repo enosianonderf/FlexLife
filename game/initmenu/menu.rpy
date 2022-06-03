@@ -11,3 +11,4 @@ init:
     #звуки
     $ td = "game/audio/sfx/td.mp3"
     $ pta = "game/audio/sfx/pta.mp3"
+    $ nsl = "game/audio/sfm/night_sounds_loop"

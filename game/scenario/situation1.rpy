@@ -1,3 +1,5 @@
+import script.test
+
 label situation1:
     stop music fadeout 2.5
     scene bg baku sunset with dissolve
