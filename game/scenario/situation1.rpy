@@ -18,3 +18,5 @@ label situation1:
         yalign 0.1
         zoom 0.8
     agil "Альхамдулиллях, молодой человек, угостите аставом."
+
+    jump situation2

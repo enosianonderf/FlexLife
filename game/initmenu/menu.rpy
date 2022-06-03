@@ -8,7 +8,19 @@ init:
     # музыка
     $ losbiblicos = "game/audio/losbiblicos.mp3"
 
-    #звуки
-    $ td = "game/audio/sfx/td.mp3"
-    $ pta = "game/audio/sfx/pta.mp3"
-    $ nsl = "game/audio/sfm/night_sounds_loop"
+    # звуки
+    # amb = ambience
+    $ td = "audio/sfx/td.mp3"
+    $ pta = "audio/sfx/pta.mp3"
+    $ nsl = "audio/sfx/night_sounds_loop.mp3"
+    $ aware = "audio/sfx/agil_awareness.mp3"
+    $ amb_loop_dream = "audio/sfx/ambience_loop_dream.mp3"
+    $ amb_fine_music = "audio/sfx/ambient_music_fine.mp3"
+    $ amb_bad_dream = "audio/sfx/bad_dream_ambience.mp3"
+    $ creepy_mbox = "audio/sfx/creepy_music_box.mp3"
+    $ whispers = "audio/sfx/deafening_whispers.mp3"
+    $ doom = "audio/sfx/doomed_thoughts.mp3"
+    $ fsteps = "audio/sfx/foot_steps.mp3"
+    $ n_woods = "audio/sfx/night_woods.mp3"
+    $ p_dream = "audio/sfx/prophetic_dream.mp3"
+    $ p_dream_30sec = "audio/sfx/prophetic_dream_30sec.mp3"

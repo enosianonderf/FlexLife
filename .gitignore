@@ -1,3 +1,4 @@
-**.rpyb
-**.json
-**.txt
+*.rpyb
+*.json
+*.txt
+*.save
