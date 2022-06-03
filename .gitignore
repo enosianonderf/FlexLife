@@ -2,3 +2,6 @@
 *.json
 *.txt
 *.save
+cache/*.*
+saves/*.*
+scenario/*.rpyc
