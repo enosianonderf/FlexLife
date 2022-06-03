@@ -2,8 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 369: is not terminated with a newline. (Check strings and parenthesis.)
-            hotspot(886, 341, 297, 47) action [Play("sound", "audio/butclick.mp3",ShowMenu("load")] hovered [ Play ("sound", "audio/click.wav")]
+File "game/scenario/situation1.rpy", line 1: expected statement.
+    import script.test
+                 ^
+
+File "game/scenario/situation1.rpy", line 12: expected statement.
+    test.flex()
+               ^
 
 Ren'Py Version: Ren'Py 7.4.2.1292
-Mon May 23 12:36:29 2022
+Fri Jun  3 16:45:22 2022
