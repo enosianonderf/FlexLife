@@ -1,5 +1,3 @@
-import script.test
-
 label situation1:
     stop music fadeout 2.5
     scene bg baku sunset with dissolve
@@ -9,7 +7,6 @@ label situation1:
     "И настанет время, когда вы узреете мощь мою."
     "Аминь же."
     "Иншаллах брат."
-    test.flex()
     play sound td
     show 3kuznik normal at left:
         yalign 0.1
